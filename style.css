@@ -6,11 +6,16 @@
   /* this property defines how far a 3D element is placed within view*/
   perspective: 800px;  /*only child elements get perspective*/
 
-  border: 10px solid blue;
+  /*border: 5px solid black;*/
 }
 
 #boxDiv{
   width: 400px;
+
+  /*used to specify whether child elements will preserve their 3D position.
+  Default: flat
+  so you must preserve 3D*/
+  transform-style: preserve-3d;
   animation: rotate 15s linear infinite;
 }
 
@@ -19,6 +24,10 @@
   position: absolute;
   width: 400px;
   height: 400px;
+  opacity: 0.8;
+  color: white;
+  font:80px impact;
+  text-align: center;
 }
 
 /*Applied a Z transform. Translation means moving the object.
